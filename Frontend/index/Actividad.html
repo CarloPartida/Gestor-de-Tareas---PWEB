@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Escolar</title>
+
+    <link rel="stylesheet" href="../styles/Actividad.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Actividades Escolares</h1>
+
+        <!-- Contenedor para mostrar mensajes cuando la informacion es incorrecta -->
+        <div id="mensajeError"></div>
+
+        <form id="formulario-actividad" action="/actividades" method="POST">
+            <input type="text" id="nombre" placeholder="Nombre de la actividad" required>
+            
+            <input type="text" id="materia" placeholder="Materia" required>
+            
+            <select id="prioridad" required>
+                <option value="">Selecciona la prioridad...</option>
+                <option value="Alta">Alta</option>
+                <option value="Media">Media</option>
+                <option value="Baja">Baja</option>
+            </select>
+            
+            <button type="submit">Guardar Actividad</button>
+        </form>
+
+        <!-- Actividades generadas por JS -->
+        <div id="lista-actividades"></div>
+    </div>
+
+    <script src="../scripts/Actividad.js"></script>
+</body>
+</html>

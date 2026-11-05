@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #cfccd7;
+    padding: 30px;
+    color: #333;
+}
+
+.contenedor {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+input, select, button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #b37700;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #b37700;
+}
+
+/* Mensajes de error */
+#mensajeError {
+    display: none;
+    background-color: #ffe6e6;
+    border: 1px solid #ff4c4c;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Tarjetas de actividades */
+.tarjeta {
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    background-color: #fafafa;
+}
+
+.tarjeta h3 {
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+.tarjeta p {
+    font-size: 0.9rem;
+    color: #555;
+    margin: 4px 0;
+}
+
+/* Botones de acción en cada tarjeta */
+.acciones {
+    margin-top: 10px;
+    display: flex;
+    gap: 8px;
+}
+
+.btn-estado {
+    background-color: #28a745;
+}
+
+.btn-eliminar {
+    background-color: #dc3545;
+}
+
+.tarjeta-actividad {
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
